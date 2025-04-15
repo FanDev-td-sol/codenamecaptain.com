@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodenameCaptain - Adventure Games Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="codenamecaptain-ocean-background"></div>
+    
+    <!-- Unique Navbar -->
+    <nav class="codenamecaptain-navbar">
+        <div class="codenamecaptain-logo">
+            <span class="codenamecaptain-logo-icon"><i class="fas fa-anchor"></i></span>
+            <span class="codenamecaptain-logo-text">CODENAME<span>CAPTAIN</span></span>
+        </div>
+        
+        <div class="codenamecaptain-nav-items">
+            <a href="index.html" class="codenamecaptain-nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="index.html#games" class="codenamecaptain-nav-item">
+                <i class="fas fa-gamepad"></i>
+                <span>Games</span>
+            </a>
+            <a href="about.html" class="codenamecaptain-nav-item">
+                <i class="fas fa-info-circle"></i>
+                <span>About</span>
+            </a>
+            <a href="contact.html" class="codenamecaptain-nav-item">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="codenamecaptain-hero">
+        <div class="codenamecaptain-hero-content">
+            <h1>Embark on <span>Epic Adventures</span></h1>
+            <p>Dive into our collection of thrilling games featuring detectives, pirates, and underwater mysteries</p>
+            <a href="#games" class="codenamecaptain-cta-button">
+                <span>Play Now</span>
+                <i class="fas fa-play"></i>
+            </a>
+        </div>
+        <div class="codenamecaptain-hero-decoration">
+            <div class="codenamecaptain-compass"></div>
+            <div class="codenamecaptain-waves"></div>
+        </div>
+    </section>
+    
+    <!-- Games Section -->
+    <section id="games" class="codenamecaptain-games">
+        <div class="codenamecaptain-section-header">
+            <h2>Our <span>Games</span></h2>
+            <p>Choose your adventure and start playing</p>
+        </div>
+        
+        <div class="codenamecaptain-games-container">
+            <div class="codenamecaptain-game-card">
+                <div class="codenamecaptain-game-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Detective Mystery</h3>
+                <p>Solve complex cases and catch the culprits in this thrilling detective game</p>
+                <button class="codenamecaptain-play-button" onclick="openGame1()">
+                    <span>Play Now</span>
+                    <i class="fas fa-play-circle"></i>
+                </button>
+            </div>
+            
+            <div class="codenamecaptain-game-card">
+                <div class="codenamecaptain-game-icon">
+                    <i class="fas fa-fish"></i>
+                </div>
+                <h3>Fish Adventure</h3>
+                <p>Explore the depths of the ocean and discover hidden treasures</p>
+                <button class="codenamecaptain-play-button" onclick="openGame2()">
+                    <span>Play Now</span>
+                    <i class="fas fa-play-circle"></i>
+                </button>
+            </div>
+            
+            <div class="codenamecaptain-game-card">
+                <div class="codenamecaptain-game-icon">
+                    <i class="fas fa-skull-crossbones"></i>
+                </div>
+                <h3>Pirate Treasure</h3>
+                <p>Navigate dangerous waters and claim treasures as a fearsome pirate</p>
+                <button class="codenamecaptain-play-button" onclick="openGame3()">
+                    <span>Play Now</span>
+                    <i class="fas fa-play-circle"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Game Details Section (FIXED) -->
+    <section id="game-details" class="codenamecaptain-game-details">
+        <div class="codenamecaptain-section-header">
+            <h2>Game <span>Details</span></h2>
+            <p>Discover the unique worlds within our games</p>
+        </div>
+        
+        <!-- Detective Mystery Details -->
+        <div class="codenamecaptain-game-detail-container detective" style="display: block; opacity: 1; transform: translateY(0);">
+            <div class="codenamecaptain-game-detail-ornament detective"></div>
+            
+            <div class="codenamecaptain-game-detail-content">
+                <div class="codenamecaptain-game-detail-header">
+                    <h3 class="codenamecaptain-game-detail-title">Detective Mystery</h3>
+                    <div class="codenamecaptain-game-detail-badge">
+                        <i class="fas fa-star"></i>
+                        <span>Featured</span>
+                    </div>
+                </div>
+                
+                <div class="codenamecaptain-game-detail-columns">
+                    <div class="codenamecaptain-game-detail-image">
+                        <div class="codenamecaptain-game-preview">
+                            <div class="codenamecaptain-preview-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="codenamecaptain-game-features">
+                            <div class="codenamecaptain-feature">
+                                <i class="fas fa-user-detective"></i>
+                                <span>10+ Cases</span>
+                            </div>
+                            <div class="codenamecaptain-feature">
+                                <i class="fas fa-clock"></i>
+                                <span>20+ Hours</span>
+                            </div>
+                            <div class="codenamecaptain-feature">
+                                <i class="fas fa-brain"></i>
+                                <span>Complex Puzzles</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="codenamecaptain-game-detail-info">
+                        <div class="codenamecaptain-game-detail-section">
+                            <h4>The Story</h4>
+                            <p>Step into the shoes of Detective Alex Morgan, a brilliant but troubled investigator with a knack for solving the most perplexing cases. In Detective Mystery, you'll navigate through the shadowy streets of Blackwood City, a metropolis where corruption runs deep and secrets lurk around every corner.</p>
+                            <p>Each case presents a unique challenge, from tracking down elusive serial killers to uncovering elaborate corporate conspiracies. Your decisions will shape the narrative, leading to multiple possible outcomes and endings.</p>
+                        </div>
+                        
+                        <div class="codenamecaptain-game-detail-section">
+                            <h4>Gameplay Features</h4>
+                            <ul class="codenamecaptain-feature-list">
+                                <li>
+                                    <span class="feature-title">Evidence Collection</span>
+                                    <span class="feature-desc">Scour crime scenes for clues, photograph evidence, and build your case file.</span>
+                                </li>
+                                <li>
+                                    <span class="feature-title">Interrogation System</span>
+                                    <span class="feature-desc">Question suspects using psychological tactics, catching them in lies or contradictions.</span>
+                                </li>
+                                <li>
+                                    <span class="feature-title">Detective Board</span>
+                                    <span class="feature-desc">Connect evidence, suspects, and motives on your interactive case board.</span>
+                                </li>
+                                <li>
+                                    <span class="feature-title">Reputation System</span>
+                                    <span class="feature-desc">Your actions affect how colleagues, criminals, and the public perceive you.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="codenamecaptain-game-cta">
+                            <button class="codenamecaptain-detail-button" onclick="openGame1()">
+                                <span>Start Investigation</span>
+                                <i class="fas fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fish Adventure Details -->
+        <div class="codenamecaptain-game-detail-container fish" style="display: block; opacity: 1; transform: translateY(0);">
+            <div class="codenamecaptain-game-detail-ornament fish"></div>
+            
+            <div class="codenamecaptain-game-detail-content">
+                <div class="codenamecaptain-game-detail-header">
+                    <h3 class="codenamecaptain-game-detail-title">Fish Adventure</h3>
+                    <div class="codenamecaptain-game-detail-badge">
+                        <i class="fas fa-award"></i>
+                        <span>Most Popular</span>
+                    </div>
+                </div>
+                
+                <div class="codenamecaptain-game-detail-columns">
+                    <div class="codenamecaptain-game-detail-image">
+                        <div class="codenamecaptain-game-preview fish-preview">
+                            <div class="codenamecaptain-preview-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="codenamecaptain-game-features">
+                            <div class="codenamecaptain-feature">
+                                <i class="fas fa-water"></i>
+                                <span>5 Underwater Realms</span>
+                            </div>
+                            <div class="codenamecaptain-feature">
+                                <i class="fas fa-fish"></i>
+                                <span>30+ Fish Species</span>
+                            </div>
+                            <div class="codenamecaptain-feature">
+                                <i class="fas fa-gem"></i>
+                                <span>Hidden Treasures</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="codenamecaptain-game-detail-info">
+                        <div class="codenamecaptain-game-detail-section">
+                            <h4>The Story</h4>
+                            <p>Dive into the enchanting underwater world of Oceania as Finn, a young adventurous fish with dreams bigger than the ocean itself. After discovering an ancient map in his grandfather's sunken ship, Finn embarks on a quest to find the legendary Crystal Trident, a powerful artifact said to grant its wielder control over the seas.</p>
+                            <p>Your journey will take you through vibrant coral reefs, mysterious deep-sea trenches, abandoned shipwrecks, and the treacherous waters of the Volcanic Vents. Along the way, you'll befriend colorful marine creatures who will aid you in your quest while facing off against the nefarious Captain Blackfin and his shark gang.</p>
+                        </div>
+                        
+                        <div class="codenamecaptain-game-detail-section">
+                            <h4>Gameplay Features</h4>
+                            <ul class="codenamecaptain-feature-list">
+                                <li>
+                                    <span class="feature-title">Swimming Mechanics</span>
+                                    <span class="feature-desc">Master fluid swimming controls to navigate through tight spaces and strong currents.</span>
+                                </li>
+                                <li>
+                                    <span class="feature-title">School Formations</span>
+                                    <span class="feature-desc">Recruit fish allies to form protective schools with unique formation abilities.</span>
+                                </li>
+                                <li>
+                                    <span class="feature-title">Ecosystem Interaction</span>
+                                    <span class="feature-desc">Influence the underwater ecosystem by planting coral, cleaning pollution, and more.</span>
+                                </li>
+                                <li>
+                                    <span class="feature-title">Bubble Communication</span>
+                                    <span class="feature-desc">Use bubble messages to communicate with other sea creatures and unlock new areas.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="codenamecaptain-game-cta">
+                            <button class="codenamecaptain-detail-button fish-button" onclick="openGame2()">
+                                <span>Dive In</span>
+                                <i class="fas fa-water"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pirate Treasure Details -->
+        <div class="codenamecaptain-game-detail-container pirate" style="display: block; opacity: 1; transform: translateY(0);">
+            <div class="codenamecaptain-game-detail-ornament pirate"></div>
+            
+            <div class="codenamecaptain-game-detail-content">
+                <div class="codenamecaptain-game-detail-header">
+                    <h3 class="codenamecaptain-game-detail-title">Pirate Treasure</h3>
+                    <div class="codenamecaptain-game-detail-badge">
+                        <i class="fas fa-fire"></i>
+                        <span>New Release</span>
+                    </div>
+                </div>
+                
+                <div class="codenamecaptain-game-detail-columns">
+                    <div class="codenamecaptain-game-detail-image">
+                        <div class="codenamecaptain-game-preview pirate-preview">
+                            <div class="codenamecaptain-preview-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="codenamecaptain-game-features">
+                            <div class="codenamecaptain-feature">
+                                <i class="fas fa-map"></i>
+                                <span>7 Exotic Islands</span>
+                            </div>
+                            <div class="codenamecaptain-feature">
+                                <i class="fas fa-ship"></i>
+                                <span>Customizable Ships</span>
+                            </div>
+                            <div class="codenamecaptain-feature">
+                                <i class="fas fa-sword"></i>
+                                <span>Naval Battles</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="codenamecaptain-game-detail-info">
+                        <div class="codenamecaptain-game-detail-section">
+                            <h4>The Story</h4>
+                            <p>In the golden age of piracy, you are Captain James "Red Eye" Blackwood, a once-respected naval officer framed for treason and left to die on a deserted island. Rescued by a crew of outcasts and misfits, you've sworn vengeance against the corrupt Governor Walton and his East India Trading Company allies.</p>
+                            <p>Your path to redemption lies in finding the seven pieces of the legendary Star of Poseidon, a mystical artifact that can control the very weather itself. Sail the treacherous Caribbean waters, build your reputation from shipwrecked nobody to feared pirate lord, and assemble a crew of the most notorious scallywags ever to sail the seven seas.</p>
+                        </div>
+                        
+                        <div class="codenamecaptain-game-detail-section">
+                            <h4>Gameplay Features</h4>
+                            <ul class="codenamecaptain-feature-list">
+                                <li>
+                                    <span class="feature-title">Ship Combat</span>
+                                    <span class="feature-desc">Master the art of naval warfare with cannons, boarding actions, and tactical maneuvers.</span>
+                                </li>
+                                <li>
+                                    <span class="feature-title">Treasure Hunting</span>
+                                    <span class="feature-desc">Decode ancient maps, solve island puzzles, and dig for buried treasure.</span>
+                                </li>
+                                <li>
+                                    <span class="feature-title">Crew Management</span>
+                                    <span class="feature-desc">Recruit, train, and manage your pirate crew, each with unique skills and stories.</span>
+                                </li>
+                                <li>
+                                    <span class="feature-title">Port Trading</span>
+                                    <span class="feature-desc">Trade exotic goods, negotiate with merchants, and manipulate the Caribbean economy.</span>
+                                </li>
+                                    <span class="feature-title">Treasure Hunting</span>
+                                    <span class="feature-desc">Decode ancient maps, solve island puzzles, and dig for buried treasure.</span>
+                                </li>
+                                <li>
+                                    <span class="feature-title">Crew Management</span>
+                                    <span class="feature-desc">Recruit, train, and manage your pirate crew, each with unique skills and stories.</span>
+                                </li>
+                                <li>
+                                    <span class="feature-title">Port Trading</span>
+                                    <span class="feature-desc">Trade exotic goods, negotiate with merchants, and manipulate the Caribbean economy.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="codenamecaptain-game-cta">
+                            <button class="codenamecaptain-detail-button pirate-button" onclick="openGame3()">
+                                <span>Set Sail</span>
+                                <i class="fas fa-anchor"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="codenamecaptain-about">
+        <div class="codenamecaptain-section-header">
+            <h2>About <span>CodenameCaptain</span></h2>
+            <p>Embark on thrilling adventures with our curated collection</p>
+        </div>
+        
+        <div class="codenamecaptain-about-content">
+            <div class="codenamecaptain-about-text">
+                <p>CodenameCaptain offers exciting adventures through our carefully crafted games. Whether you want to solve mysteries, explore underwater worlds, or sail the high seas, we have something for everyone.</p>
+                <p>Our passion is creating immersive gaming experiences that combine thrilling storylines with engaging gameplay.</p>
+                <p>Join our community of adventurers today and begin your journey!</p>
+                
+                <!-- Interactive Treasure Hunt Feature -->
+                <div class="codenamecaptain-treasure-hunt">
+                    <h4>Find the <span>Hidden Treasure</span>!</h4>
+                    <p>Click on the map to uncover a secret treasure chest.</p>
+                    <div class="codenamecaptain-treasure-meter">
+                        <div class="codenamecaptain-meter-progress" id="treasure-progress"></div>
+                        <span>Treasure Meter</span>
+                    </div>
+                </div>
+            </div>
+            <div class="codenamecaptain-about-image">
+                <div class="codenamecaptain-map" id="treasure-map"></div>
+                <div class="codenamecaptain-treasure-chest" id="treasure-chest">
+                    <i class="fas fa-treasure-chest"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="codenamecaptain-contact">
+        <div class="codenamecaptain-section-header">
+            <h2>Contact <span>Us</span></h2>
+            <p>Have questions? We're here to help!</p>
+        </div>
+        
+        <div class="codenamecaptain-contact-form">
+            <div class="codenamecaptain-form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="codenamecaptain-form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="codenamecaptain-form-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Enter your message"></textarea>
+            </div>
+            <button class="codenamecaptain-submit-button">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </section>
+    
+    <!-- Unique Footer (NEW DESIGN) -->
+    <footer class="codenamecaptain-footer-new">
+        <div class="codenamecaptain-footer-top">
+            <div class="codenamecaptain-footer-bg-elements">
+                <div class="codenamecaptain-footer-ship"></div>
+                <div class="codenamecaptain-footer-bubbles"></div>
+                <div class="codenamecaptain-footer-islands"></div>
+            </div>
+            
+            <div class="codenamecaptain-footer-content-wrap">
+                <div class="codenamecaptain-footer-branding">
+                    <div class="codenamecaptain-footer-logo-new">
+                        <div class="codenamecaptain-logo-container">
+                            <i class="fas fa-compass"></i>
+                            <div class="codenamecaptain-logo-glow"></div>
+                        </div>
+                        <div class="codenamecaptain-footer-title">
+                            <h3>CODENAME<span>CAPTAIN</span></h3>
+                            <p>Embark on epic adventures</p>
+                        </div>
+                    </div>
+                    
+                    <div class="codenamecaptain-footer-description">
+                        <p>Discover a world of adventure with our collection of immersive games. Join our community of explorers, detectives, and pirates on a journey through fantastical realms.</p>
+                    </div>
+                    
+                    <div class="codenamecaptain-footer-social-new">
+                        <a href="#" class="codenamecaptain-social-btn">
+                            <i class="fab fa-discord"></i>
+                            <span>Join our Discord</span>
+                        </a>
+                        <div class="codenamecaptain-social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="codenamecaptain-footer-nav-container">
+                    <div class="codenamecaptain-footer-nav-section">
+                        <h4>Navigation</h4>
+                        <div class="codenamecaptain-footer-nav-links">
+                            <a href="index.html" class="codenamecaptain-footer-link">
+                                <i class="fas fa-home"></i>
+                                <span>Home</span>
+                            </a>
+                            <a href="index.html#games" class="codenamecaptain-footer-link">
+                                <i class="fas fa-gamepad"></i>
+                                <span>Games</span>
+                            </a>
+                            <a href="index.html#game-details" class="codenamecaptain-footer-link">
+                                <i class="fas fa-info-circle"></i>
+                                <span>Game Details</span>
+                            </a>
+                            <a href="about.html" class="codenamecaptain-footer-link">
+                                <i class="fas fa-book"></i>
+                                <span>About</span>
+                            </a>
+                            <a href="contact.html" class="codenamecaptain-footer-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>Contact</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="codenamecaptain-footer-nav-section">
+                        <h4>Our Games</h4>
+                        <div class="codenamecaptain-footer-game-links">
+                            <a href="#" onclick="openGame1(); return false;" class="codenamecaptain-footer-game-link detective">
+                                <div class="codenamecaptain-footer-game-icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="codenamecaptain-footer-game-info">
+                                    <span class="game-name">Detective Mystery</span>
+                                    <span class="game-tag">Mystery</span>
+                                </div>
+                            </a>
+                            <a href="#" onclick="openGame2(); return false;" class="codenamecaptain-footer-game-link fish">
+                                <div class="codenamecaptain-footer-game-icon">
+                                    <i class="fas fa-fish"></i>
+                                </div>
+                                <div class="codenamecaptain-footer-game-info">
+                                    <span class="game-name">Fish Adventure</span>
+                                    <span class="game-tag">Exploration</span>
+                                </div>
+                            </a>
+                            <a href="#" onclick="openGame3(); return false;" class="codenamecaptain-footer-game-link pirate">
+                                <div class="codenamecaptain-footer-game-icon">
+                                    <i class="fas fa-skull-crossbones"></i>
+                                </div>
+                                <div class="codenamecaptain-footer-game-info">
+                                    <span class="game-name">Pirate Treasure</span>
+                                    <span class="game-tag">Adventure</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="codenamecaptain-footer-newsletter">
+                        <h4>Stay Updated</h4>
+                        <p>Subscribe to our newsletter for the latest game releases and updates</p>
+                        <div class="codenamecaptain-footer-form">
+                            <input type="email" placeholder="Enter your email" class="codenamecaptain-footer-input">
+                            <button class="codenamecaptain-footer-subscribe">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="codenamecaptain-footer-bottom-new">
+            <div class="codenamecaptain-footer-bottom-content">
+                <p>&copy; 2025 CodenameCaptain. All rights reserved.</p>
+                <div class="codenamecaptain-footer-links-small">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="rsg.html">RSG</a>
+                    <a href="opt-out.html">Opt-Out</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Age Verification Popup -->
+<div class="codenamecaptain-age-verification" id="ageVerificationPopup">
+    <div class="codenamecaptain-age-verification-content">
+        <div class="codenamecaptain-age-verification-logo">
+            <i class="fas fa-anchor"></i>
+            <span>CODENAME<span>CAPTAIN</span></span>
+        </div>
+        
+        <div class="codenamecaptain-age-verification-header">
+            <h2>Age Verification Required</h2>
+            <p>This website contains content suitable for users who are 18 years of age or older.</p>
+        </div>
+        
+        <div class="codenamecaptain-age-verification-question">
+            <p>Please confirm that you are at least 18 years old to enter:</p>
+        </div>
+        
+        <div class="codenamecaptain-age-verification-buttons">
+            <button class="codenamecaptain-age-verification-yes" onclick="verifyAge(true)">
+                <i class="fas fa-check-circle"></i>
+                <span>Yes, I am 18 or older</span>
+            </button>
+            
+            <button class="codenamecaptain-age-verification-no" onclick="verifyAge(false)">
+                <i class="fas fa-times-circle"></i>
+                <span>No, I am under 18</span>
+            </button>
+        </div>
+        
+        <div class="codenamecaptain-age-verification-terms">
+            <p>By entering this site, you agree to our <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Redirect Overlay (shown when user is underage) -->
+<div class="codenamecaptain-redirect-overlay" id="redirectOverlay">
+    <div class="codenamecaptain-redirect-content">
+        <i class="fas fa-exclamation-circle"></i>
+        <h2>Age Restriction</h2>
+        <p>We're sorry, but you must be at least 18 years old to access this website.</p>
+        <p>You will be redirected to an age-appropriate website in <span id="redirectCounter">5</span> seconds.</p>
+    </div>
+</div>
+    
+    <!-- Game Container (Required Code) -->
+    <div id="game-container" style="display: none; position: fixed; inset: 0; z-index: 9999; background-color: rgba(0, 0, 0, 0.9); overflow: hidden; align-items: center; justify-content: center;">
+        <button id="exit-button" onclick="closeGame()" style="position: absolute; top: 20px; right: 20px; padding: 10px 20px; background-color: #ff4c4c; color: white; border: none; border-radius: 50px; cursor: pointer; z-index: 10000; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); font-size: 18px; font-weight: bold; transition: all 0.3s ease;">Exit</button>
+        
+        <iframe id="game-frame" style="width: 80%; height: 80%; border: none; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); border-radius: 15px;"></iframe>
+    </div>
+    
+    <script>
+
+
+/* Age Verification Popup JavaScript */
+
+// Display the popup immediately when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Show age verification popup immediately
+    // Since we're not using sessionStorage, the popup will appear every time the page loads
+    const ageVerificationPopup = document.getElementById('ageVerificationPopup');
+    if (ageVerificationPopup) {
+        ageVerificationPopup.style.display = 'flex';
+        
+        // Prevent scrolling on the body while popup is active
+        document.body.style.overflow = 'hidden';
+    }
+});
+
+// Function to handle age verification
+function verifyAge(isOfAge) {
+    const ageVerificationPopup = document.getElementById('ageVerificationPopup');
+    const redirectOverlay = document.getElementById('redirectOverlay');
+    
+    if (isOfAge) {
+        // User is 18 or older
+        // Close the popup and allow access to the site
+        ageVerificationPopup.style.opacity = '0';
+        setTimeout(() => {
+            ageVerificationPopup.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+        }, 500);
+    } else {
+        // User is under 18
+        // Show redirect overlay and start countdown
+        ageVerificationPopup.style.opacity = '0';
+        setTimeout(() => {
+            ageVerificationPopup.style.display = 'none';
+            
+            // Show redirect overlay
+            redirectOverlay.classList.add('active');
+            
+            // Start countdown
+            let counter = 5;
+            const counterElement = document.getElementById('redirectCounter');
+            
+            const countdownInterval = setInterval(() => {
+                counter--;
+                if (counterElement) {
+                    counterElement.textContent = counter;
+                }
+                
+                if (counter <= 0) {
+                    clearInterval(countdownInterval);
+                    // Redirect to an age-appropriate site
+                    window.location.href = 'https://www.google.com';
+                }
+            }, 1000);
+        }, 500);
+    }
+}
+
+// Add escape key handler to close the popup (for testing purposes)
+// In production, you might want to remove this to prevent bypass
+document.addEventListener('keydown', function(event) {
+    // Check if the key pressed was Escape AND if ctrl key was also pressed (to make it harder to accidentally bypass)
+    if (event.key === 'Escape' && event.ctrlKey) {
+        const ageVerificationPopup = document.getElementById('ageVerificationPopup');
+        if (ageVerificationPopup && ageVerificationPopup.style.display !== 'none') {
+            verifyAge(true); // Assume user is of age for testing purposes
+        }
+    }
+});
+        /* CodenameCaptain - Main JavaScript */
+
+// Interactive ripple effect on click
+function createRipple(event) {
+    const button = event.currentTarget;
+    
+    // Create ripple element
+    const ripple = document.createElement('span');
+    ripple.classList.add('codenamecaptain-ripple');
+    
+    // Position the ripple
+    const rect = button.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    
+    ripple.style.width = ripple.style.height = `${size}px`;
+    ripple.style.left = `${event.clientX - rect.left - size / 2}px`;
+    ripple.style.top = `${event.clientY - rect.top - size / 2}px`;
+    
+    // Add ripple to button
+    button.appendChild(ripple);
+    
+    // Remove ripple after animation
+    setTimeout(() => {
+        ripple.remove();
+    }, 600);
+}
+
+// Add ripple effect to all buttons
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.codenamecaptain-play-button, .codenamecaptain-cta-button, .codenamecaptain-submit-button');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', createRipple);
+    });
+    
+    // Interactive floating elements
+    const gameCards = document.querySelectorAll('.codenamecaptain-game-card');
+    
+    gameCards.forEach(card => {
+        card.addEventListener('mousemove', function(e) {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const moveX = (x - centerX) / 20;
+            const moveY = (y - centerY) / 20;
+            
+            card.style.transform = `translateY(-5px) rotateX(${-moveY}deg) rotateY(${moveX}deg)`;
+            card.style.transition = 'transform 0.1s ease';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            card.style.transform = 'translateY(0) rotateX(0) rotateY(0)';
+            card.style.transition = 'transform 0.5s ease';
+        });
+    });
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+            });
+            
+            // Update active navigation item
+            document.querySelectorAll('.codenamecaptain-nav-item').forEach(navItem => {
+                navItem.classList.remove('active');
+            });
+            this.classList.add('active');
+        }
+    });
+});
+
+// Update active navigation item on scroll
+window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY;
+    
+    document.querySelectorAll('section').forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+        
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            document.querySelectorAll('.codenamecaptain-nav-item').forEach(navItem => {
+                navItem.classList.remove('active');
+                if (navItem.getAttribute('href') === '#' + sectionId) {
+                    navItem.classList.add('active');
+                }
+            });
+        }
+    });
+});
+
+// Form validation for contact form
+const contactForm = document.querySelector('.codenamecaptain-contact-form');
+if (contactForm) {
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+    const submitButton = document.querySelector('.codenamecaptain-submit-button');
+    
+    submitButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        let valid = true;
+        
+        // Simple validation
+        if (!nameInput.value.trim()) {
+            nameInput.style.borderColor = '#e74c3c';
+            valid = false;
+        } else {
+            nameInput.style.borderColor = '#e0e0e0';
+        }
+        
+        if (!emailInput.value.trim() || !isValidEmail(emailInput.value)) {
+            emailInput.style.borderColor = '#e74c3c';
+            valid = false;
+        } else {
+            emailInput.style.borderColor = '#e0e0e0';
+        }
+        
+        if (!messageInput.value.trim()) {
+            messageInput.style.borderColor = '#e74c3c';
+            valid = false;
+        } else {
+            messageInput.style.borderColor = '#e0e0e0';
+        }
+        
+        if (valid) {
+            // In a real implementation, you would send the form data to a server
+            alert('Thank you for your message! We will get back to you soon.');
+            nameInput.value = '';
+            emailInput.value = '';
+            messageInput.value = '';
+        }
+    });
+    
+    // Email validation function
+    function isValidEmail(email) {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
+}
+
+// Animation on scroll
+window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY;
+    const cards = document.querySelectorAll('.codenamecaptain-game-card');
+    
+    cards.forEach((card, index) => {
+        const cardPosition = card.offsetTop;
+        
+        if (scrollPosition > cardPosition - window.innerHeight + 100) {
+            setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, index * 100);
+        }
+    });
+});
+
+// Initialize cards with opacity 0
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.codenamecaptain-game-card');
+    
+    cards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'all 0.5s ease';
+    });
+    
+    // Trigger scroll event to initialize animations
+    window.dispatchEvent(new Event('scroll'));
+    
+    // Interactive Compass Rotation
+    document.querySelector('.codenamecaptain-compass').addEventListener('click', function() {
+        this.style.animation = 'none';
+        setTimeout(() => {
+            this.style.animation = 'rotate 3s cubic-bezier(0.34, 1.56, 0.64, 1)';
+            
+            // Create sparkle effects
+            for (let i = 0; i < 10; i++) {
+                createSparkle(this);
+            }
+        }, 10);
+    });
+    
+    // Interactive Logo Animation
+    document.querySelector('.codenamecaptain-logo').addEventListener('click', function() {
+        const icon = this.querySelector('.codenamecaptain-logo-icon');
+        icon.style.animation = 'none';
+        
+        setTimeout(() => {
+            icon.style.animation = 'bounce 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)';
+            
+            // Create water splash effect
+            for (let i = 0; i < 8; i++) {
+                createWaterDrop(this);
+            }
+        }, 10);
+    });
+    
+    // Water drop animation
+    function createWaterDrop(parent) {
+        const drop = document.createElement('span');
+        drop.classList.add('codenamecaptain-water-drop');
+        
+        const size = Math.random() * 10 + 5;
+        drop.style.width = `${size}px`;
+        drop.style.height = `${size}px`;
+        drop.style.left = `${Math.random() * 60 + 20}%`;
+        drop.style.animationDuration = `${Math.random() * 1 + 0.5}s`;
+        
+        parent.appendChild(drop);
+        
+        setTimeout(() => {
+            drop.remove();
+        }, 1500);
+    }
+    
+    // Sparkle animation
+    function createSparkle(parent) {
+        const sparkle = document.createElement('span');
+        sparkle.classList.add('codenamecaptain-sparkle');
+        
+        const size = Math.random() * 8 + 4;
+        sparkle.style.width = `${size}px`;
+        sparkle.style.height = `${size}px`;
+        
+        // Position randomly around the parent
+        const parentRect = parent.getBoundingClientRect();
+        const angle = Math.random() * Math.PI * 2;
+        const distance = Math.random() * 100 + 50;
+        
+        sparkle.style.left = `${Math.cos(angle) * distance + parentRect.width/2}px`;
+        sparkle.style.top = `${Math.sin(angle) * distance + parentRect.height/2}px`;
+        
+        parent.appendChild(sparkle);
+        
+        setTimeout(() => {
+            sparkle.remove();
+        }, 1000);
+    }
+});
+
+// Required game functions
+function openGame1() {
+    var container = document.getElementById('game-container');
+    container.style.display = 'flex'; 
+            var iframe = document.getElementById('game-frame');
+    iframe.src = "./Slot Detective/index.html";
+}
+function openGame2() {
+    var container = document.getElementById('game-container');
+    container.style.display = 'flex'; 
+    var iframe = document.getElementById('game-frame');
+    iframe.src = "./Fish Slot/index.html";
+}
+function openGame3() {
+    var container = document.getElementById('game-container');
+    container.style.display = 'flex'; 
+    var iframe = document.getElementById('game-frame');
+    iframe.src = "./FisherMan Slot/index.html";
+}
+
+function closeGame() {
+    var container = document.getElementById('game-container');
+    container.style.display = 'none';
+    var iframe = document.getElementById('game-frame');
+    iframe.src = "";
+}
+
+// Interactive Treasure Hunt Feature
+document.addEventListener('DOMContentLoaded', function() {
+    const treasureMap = document.getElementById('treasure-map');
+    const treasureChest = document.getElementById('treasure-chest');
+    const treasureProgress = document.getElementById('treasure-progress');
+    
+    if (!treasureMap || !treasureChest || !treasureProgress) return;
+    
+    let clicks = 0;
+    const maxClicks = 5;
+    let treasureFound = false;
+    let treasureX = Math.random() * 0.8 + 0.1; // 10-90% of width
+    let treasureY = Math.random() * 0.8 + 0.1; // 10-90% of height
+    
+    // Create overlay for treasure reveal
+    const treasureReveal = document.createElement('div');
+    treasureReveal.classList.add('codenamecaptain-treasure-reveal');
+    document.body.appendChild(treasureReveal);
+    
+    const treasureContent = document.createElement('div');
+    treasureContent.classList.add('codenamecaptain-treasure-content');
+    treasureReveal.appendChild(treasureContent);
+    
+    treasureMap.addEventListener('click', function(e) {
+        if (treasureFound) return;
+        
+        clicks++;
+        
+        // Update progress bar
+        const progress = (clicks / maxClicks) * 100;
+        treasureProgress.style.width = progress + '%';
+        
+        // Calculate distance to treasure
+        const rect = treasureMap.getBoundingClientRect();
+        const clickX = (e.clientX - rect.left) / rect.width;
+        const clickY = (e.clientY - rect.top) / rect.height;
+        
+        const distance = Math.sqrt(
+            Math.pow(clickX - treasureX, 2) + 
+            Math.pow(clickY - treasureY, 2)
+        );
+        
+        // Show visual feedback
+        createPulse(e.clientX - rect.left, e.clientY - rect.top);
+        
+        // Check if treasure found
+        if (distance < 0.15 || clicks >= maxClicks) {
+            treasureFound = true;
+            
+            // Position and show the treasure
+            treasureChest.style.left = (treasureX * 100) + '%';
+            treasureChest.style.top = (treasureY * 100) + '%';
+            treasureChest.style.opacity = '1';
+            treasureChest.style.transform = 'scale(1)';
+            treasureChest.classList.add('found');
+            
+            // Complete progress bar
+            treasureProgress.style.width = '100%';
+            
+            // Show sparkles around treasure
+            for (let i = 0; i < 8; i++) {
+                createSparkleAtElement(treasureChest);
+            }
+            
+            // Show reward when chest is clicked
+            treasureChest.addEventListener('click', showTreasureReward);
+        }
+    });
+    
+    function createPulse(x, y) {
+        const pulse = document.createElement('div');
+        pulse.style.position = 'absolute';
+        pulse.style.left = x + 'px';
+        pulse.style.top = y + 'px';
+        pulse.style.width = '20px';
+        pulse.style.height = '20px';
+        pulse.style.borderRadius = '50%';
+        pulse.style.backgroundColor = 'rgba(243, 156, 18, 0.7)';
+        pulse.style.transform = 'translate(-50%, -50%)';
+        pulse.style.animation = 'pulse 1s ease-out forwards';
+        pulse.style.pointerEvents = 'none';
+        
+        treasureMap.appendChild(pulse);
+        
+        setTimeout(() => {
+            pulse.remove();
+        }, 1000);
+    }
+    
+    function createSparkleAtElement(element) {
+        const rect = element.getBoundingClientRect();
+        const angle = Math.random() * Math.PI * 2;
+        const distance = Math.random() * 30 + 30;
+        
+        const sparkle = document.createElement('div');
+        sparkle.classList.add('codenamecaptain-sparkle');
+        sparkle.style.position = 'absolute';
+        sparkle.style.left = (rect.width / 2 + Math.cos(angle) * distance) + 'px';
+        sparkle.style.top = (rect.height / 2 + Math.sin(angle) * distance) + 'px';
+        sparkle.style.backgroundColor = Math.random() > 0.5 ? 'gold' : '#ffcc00';
+        
+        element.appendChild(sparkle);
+        
+        setTimeout(() => {
+            sparkle.remove();
+        }, 1000);
+    }
+    
+    function showTreasureReward() {
+        treasureContent.innerHTML = `
+            <h3>Treasure Found!</h3>
+            <p>Congratulations, Captain! You've discovered a hidden treasure.</p>
+            <p>Your reward: <strong>50% OFF</strong> your first game purchase!</p>
+            <p>Use code: <span style="color: #e74c3c; font-weight: bold;">TREASURE50</span></p>
+            <button class="codenamecaptain-cta-button" style="margin-top: 20px;" onclick="closeTreasure()">Claim Reward</button>
+        `;
+        
+        treasureReveal.classList.add('active');
+        
+        // Add sparkles to the treasure content
+        for (let i = 0; i < 10; i++) {
+            setTimeout(() => {
+                createSparkleAtElement(treasureContent);
+            }, i * 100);
+        }
+    }
+    
+    // Add to global scope to be called from inline onclick
+    window.closeTreasure = function() {
+        treasureReveal.classList.remove('active');
+    };
+    
+    // Add pulse animation to CSS
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes pulse {
+            0% { transform: translate(-50%, -50%) scale(0.5); opacity: 1; }
+            100% { transform: translate(-50%, -50%) scale(3); opacity: 0; }
+        }
+    `;
+    document.head.appendChild(style);
+});
+    </script>
+</body>
+</html>
